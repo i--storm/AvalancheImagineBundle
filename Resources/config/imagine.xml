@@ -153,6 +153,7 @@
         </service>
 
         <service id="imagine.filter.loader.canvas_resize" class="%imagine.filter.loader.canvas_resize.class%">
+            <argument type="service" id="imagine" />
             <tag name="imagine.filter.loader" filter="canvas_resize" />
         </service>
 

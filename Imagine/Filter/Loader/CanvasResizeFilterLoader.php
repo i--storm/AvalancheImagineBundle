@@ -12,11 +12,11 @@ class CanvasResizeFilterLoader implements LoaderInterface
     protected $imagine;
 
     /**
-     * @param \Avalanche\Bundle\ImagineBundle\Imagine\Filter\FilterManager $filterManager
+     * @param \Imagine\Image\ImagineInterface $imagine
      */
-    public function __construct(FilterManager $filterManager)
+    public function __construct(ImagineInterface $imagine)
     {
-        $this->filterManager = $filterManager;
+        $this->imagine = $imagine;
     }
 
     /**
