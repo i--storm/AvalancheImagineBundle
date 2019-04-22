@@ -41,7 +41,7 @@ class CanvasResizeFilter implements FilterInterface
 
         $canvas_size=$this->canvas->getSize();
 
-        $thumb=new Thumbnail(new Box($$canvas_size->width, $$canvas_size->height), ManipulatorInterface::THUMBNAIL_INSET);
+        $thumb=new Thumbnail(new Box($canvas_size->width, $canvas_size->height), ManipulatorInterface::THUMBNAIL_INSET);
         $resized_image=$thumb->apply($image);
 
 
