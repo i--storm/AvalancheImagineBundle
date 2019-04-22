@@ -2,8 +2,7 @@
 namespace Avalanche\Bundle\ImagineBundle\Imagine\Filter\Loader;
 
 use Imagine\Image\ImagineInterface;
-use Avalanche\Bundle\ImagineBundle\Imagine\Filter\FilterManager;
-use Avalanche\Bundle\ImagineBundle\Imagine\Filter\ChainFilter;
+use Avalanche\Bundle\ImagineBundle\Imagine\Filter\CanvasResizeFilter;
 
 class CanvasResizeFilterLoader implements LoaderInterface
 {
