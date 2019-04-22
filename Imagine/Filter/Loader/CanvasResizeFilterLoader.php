@@ -4,6 +4,7 @@ namespace Avalanche\Bundle\ImagineBundle\Imagine\Filter\Loader;
 use Imagine\Image\ImagineInterface;
 use Avalanche\Bundle\ImagineBundle\Imagine\Filter\CanvasResizeFilter;
 
+
 class CanvasResizeFilterLoader implements LoaderInterface
 {
     /**
@@ -31,7 +32,7 @@ class CanvasResizeFilterLoader implements LoaderInterface
         $width = isset($options['size']) ? $options['size'][0] : 0;
         $height = isset($options['size']) ? $options['size'][1] : 0;
 
-        $size  = new \Imagine\Image\Box(400, 300);
+        $size  = new \Imagine\Image\Box($width, $height);
         $canvas = $this->imagine->create($size);
 
         return new CanvasResizeFilter($canvas, $width, $height);
