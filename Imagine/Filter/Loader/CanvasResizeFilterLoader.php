@@ -1,6 +1,7 @@
 <?php
 namespace Avalanche\Bundle\ImagineBundle\Imagine\Filter\Loader;
 
+use Imagine\Image\ImagineInterface;
 use Avalanche\Bundle\ImagineBundle\Imagine\Filter\FilterManager;
 use Avalanche\Bundle\ImagineBundle\Imagine\Filter\ChainFilter;
 
