@@ -37,7 +37,7 @@ class CanvasResizeFilter implements FilterInterface
     public function apply(ImageInterface $image)
     {
 
-        $pasteFilter=new PasteFilter($image,'center','center');
+        $pasteFilter=new PasteFilter($image,'center','middle');
         return $pasteFilter->apply($this->canvas);
 
     }
